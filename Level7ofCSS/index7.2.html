@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animation Property</title>
+    <style>
+        .box{
+            height: 70px; 
+            width: 70px;
+            border: 2px solid red;
+            border-radius: 4px;
+            background-color: burlywood;
+            position:absolute;
+            top: 10px;
+            left: 10px;
+            /* animation-name: Ghomna;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: 3;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+
+            animation: Ghomna 1s ease-in-out 1s infinite alternate;
+
+        }
+        @keyframes Ghomna {
+            /* from{left: 10px;}
+            to{left: 150px;} */
+            0%{left:10px;}
+            50% {left: 50px;}
+            60%{left: 160px;}
+            100%{left: 200px;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>
