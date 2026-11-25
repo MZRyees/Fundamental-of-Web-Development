@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Set4</title>
+    <style>
+        .Button_Bag{
+            border: none;
+            border-radius:10px;
+            background-color: rgb(107, 195, 107)
+        }
+        #Whishlist_button{
+            border: 2px solid dashed black;
+            border-radius:5px;
+            padding: 5px 30px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <button class="Button_Bag" onclick="
+    cartQuantity++;
+     document.querySelector('#CartSumary').innerText = `your Bag has ${cartQuantity} items`;">Add to Bag</button>
+    <button id="Whishlist_button" onclick="
+    cartQuantity--;
+     document.querySelector('#CartSumary').innerText = `your Bag has ${cartQuantity} items`;">Move To WhishList</button>
+    <button class="Button_Bag" onclick="
+    cartQuantity+=2
+     document.querySelector('#CartSumary').innerText = `your Bag has ${cartQuantity} items`;">Add 1+1 sale Item</button>
+    <h1 id="CartSumary"></h1>
+    <script>
+        let cartQuantity =0;
+        document.querySelector('#CartSumary').innerText = `your Bag has ${cartQuantity} items`;
+    </script>
+</body>
+</html>

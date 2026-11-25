@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Exercise</title>
+    <style>
+        #my_Button{
+            height: 50px;
+            width: 50px;
+            border: none;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        .js-odd{
+            background-color: red;
+        }
+        .js-even{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="greeting"></h3>
+    <button id="my_Button" onclick="buttonPressed()"></button> <br> <hr>
+    <button onclick="localStorage.clear()">Reset</button>
+    <script>
+            let numberOfClicked = localStorage.getItem('numberOfClicked') || 0;
+            function buttonPressed(){
+                console.log('pressed');
+                numberOfClicked++;
+                localStorage.setItem('numberOfClicked', numberOfClicked);
+                updateButton();
+            }
+            function updateButton(){
+                 let button = document.querySelector('#my_Button');
+                if(numberOfClicked%2==0){
+                    button.classList.remove('js-odd');
+                    button.classList.add('js-even');
+                }
+                else{
+                      button.classList.remove('js-even');
+                    button.classList.add('js-odd');
+                }
+               button.innerText =  numberOfClicked;
+            }
+            updateButton();
+
+
+
+        function doGreeting(Name){
+        let date = new Date();
+        let hours = date.getHours();
+        // let hours = 12;
+        let heading = document.querySelector('#greeting');
+        if(hours>5 && hours <12){
+            heading.innerText =`Good Morning ${Name}`;
+        }else if(hours>12 && hours <18){
+            heading.innerText =`Good AfterNOon ${Name}`;
+        }
+        else {
+            heading.innerText = `Good Night ${Name}`;
+        }
+        }
+        doGreeting('Dear Zaki');
+    </script>
+</body>
+</html>

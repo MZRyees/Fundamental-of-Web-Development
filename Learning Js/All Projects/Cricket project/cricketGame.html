@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <style>
+        body{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ball Bat and Stump Game</h1>
+    <button onclick="
+     let randomNumber = Math.random()*3; 
+     let computerChoice;
+     if(randomNumber>0 && randomNumber<=1)
+     {
+     computerChoice = 'Bat'; 
+        // console.log('Computer choice is Bat')                  
+     }
+     else if(randomNumber>1 && randomNumber<=2){
+        computerChoice = 'Ball';
+        // console.log('Computer choice is Ball');
+     }
+     else{
+        computerChoice = 'Wicket';
+        // console.log('Computer choice is Wicket');
+     }
+     let resultMsg;
+     if(computerChoice ==='Ball'){
+        resultMsg='User Won the game';
+     }
+     else if(computerChoice==='Bat'){
+     resultMsg=`it's a tie`;}
+     else if(computerChoice==='Wicket'){
+        resultMsg='Computer won the game';
+     }
+     alert(`You have chosen Bat. Computer Choice is ${computerChoice} and ${resultMsg}`);
+     ">Bat</button>
+     <button onclick="
+      randomNumber = Math.random()*3; 
+       computerChoice;
+     if(randomNumber>0 && randomNumber<=1)
+     {
+     computerChoice = 'Bat'; 
+      //   console.log('Computer choice is Bat')                   -->
+     }
+     else if(randomNumber>1 && randomNumber<=2){
+       let computerChoice = 'Ball';
+      //   console.log('Computer choice is Ball');
+     }
+      else{
+        computerChoice = 'Wicket';}
+      //   console.log('Computer choice is Wicket');
+     if(computerChoice ==='Ball'){
+        resultMsg='it is tie!';
+     }
+     else if(computerChoice==='Bat'){
+     resultMsg=`Computer Won the Game`;}
+     else if(computerChoice==='Wicket'){
+        resultMsg='User Won the Game!';
+     }
+     alert(`You have chosen Ball. Computer Choice is ${computerChoice} and ${resultMsg}`);
+     ">Ball</button>
+    <button onclick="
+      randomNumber = Math.random()*3; 
+       computerChoice;
+     if(randomNumber>0 && randomNumber<=1)
+     {
+     computerChoice = 'Bat'; 
+      //   console.log('Computer choice is Bat')                   -->
+     }
+     else if(randomNumber>1 && randomNumber<=2){
+        computerChoice = 'Ball';
+      //   console.log('Computer choice is Ball');
+     }
+      else{
+        computerChoice = 'Wicket';
+      //   console.log('Computer choice is Wicket');
+     }
+     resultMsg;
+     if(computerChoice ==='Ball'){
+        resultMsg='Computer Win the Game!';
+     }
+     else if(computerChoice==='Bat'){
+     resultMsg=`user Win the Game!`;}
+     else if(computerChoice==='Wicket'){
+        resultMsg='It is Tie Game!';
+     }
+     alert(`You have chosen Wicket. Computer Choice is ${computerChoice} and ${resultMsg}`);
+    ">Wicket</button>
+    <script>
+      let computerChoice;
+      let resultMsg;
+    </script>
+</body>
+</html>

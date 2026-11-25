@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Function</title>
+</head>
+<body>
+    <button id="My_button">Click Me</button>
+    <script>
+
+        //Event Listener
+        // let buttonElement = document.querySelector('#My_button');
+        // let behaviour =event =>console.log('Iam clicked');
+        // buttonElement.addEventListener('click', behaviour);
+        // let printDate = event =>console.log(new Date());
+        // buttonElement.addEventListener('click', printDate);
+        // buttonElement.removeEventListener('click', behaviour);
+
+        //For each Loop
+        // let arr = [1,2,,7,8,9,11,6];
+        // arr.forEach(i => console.log(i));
+            
+        //Array Method
+        //filtering array Method
+        // let arr = [1,2,3,4,5,6,7,8,9];
+        // console.log(arr);
+        // let odds = arr.filter((num,indes) =>{
+        //     if(num%2===1){
+        //         return true;
+        //     }
+        //     else{
+        //         return false;
+        //     }
+        // });
+        // console.log(odds);
+        // let newOdds = arr.filter((num,indes) =>(num%2===1));
+        // console.log(newOdds);
+
+        //Maping array Method
+        let arr =[1,2,3,4,5];
+        let squares = arr.map((num)=> num*num);
+        console.log(squares);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let product = function(num1, num2){
+        //     return num1 * num2;
+        // };
+        // console.log(product(9,5));
+        // let newProduct = product;
+        // console.log(newProduct(9,5));
+        // let productOfThreeNumbers = function(num1,num2,num3,product){
+        //     let product1 = product(num1,num2);
+        //     return product(product1,num3);
+        // }
+        // console.log(productOfThreeNumbers(2,3,10,product));
+
+        //Arrow functions
+        // let sum =(num1, num2)=>{
+        //     return num1+num2;
+        // };
+        // console.log(sum(9,8));
+        // let product = (pro1, pro2)=>{
+        //     return pro1*pro2;
+        // }
+        // console.log(product(9,10));
+        // let square = num => num*num;
+        // console.log(square(9));
+
+        //Set time out 
+    //    let alarm=  () => console.log(`Subha hogai hai uth ja! ${Date()}`);
+    //    let timerId = setTimeout(alarm,1000);
+    //     console.log(`Alarm Set with timerId ${timerId}`);
+    //     // clearTimeout(timerId);
+
+    //     //Set Interval
+    //    let intervalID= setInterval(alarm,1000);
+    //     setTimeout(() =>clearInterval(intervalID),5000);
+</script>
+</body>
+</html>

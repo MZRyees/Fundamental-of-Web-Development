@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Date and DOM</title>
+</head>
+<body>
+    <button class="my-button">Click Me</button>
+    <div class="My-div">This is First Div</div>
+    <script>
+        // let myDate = new Date();
+        // console.log(myDate);
+        // console.log(myDate.getTime());
+        // console.log(myDate.getFullYear());
+        // console.log(myDate.getDate());
+        // console.log(myDate.getHours());
+        // console.log(myDate.getDay());
+        let button = document.createElement('Button');
+        button.innerText = 'Push me';
+        // console.log(button);
+        document.querySelector('.My-div').appendChild(button);
+        document.querySelector('.My-div').removeChild(button);
+    </script>
+</body>
+</html>

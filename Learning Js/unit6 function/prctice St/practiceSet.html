@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>unit 6 Practice Set</title>
+</head>
+<body>
+    <script>
+        function EvenOdd(a){
+            if(a%2===0){
+                return `The given value ${a} is even number`;
+            }
+            else {
+                return `The given value ${a} is odd number`;
+            }
+        }
+        console.log(EvenOdd(8));
+        console.log(EvenOdd(9));
+        console.log(EvenOdd(90));
+        function Maximum(a,b){
+            if(a>b){
+                return `The enter value a is maximum`;
+            }
+            else if(b>a){
+                return `The Enter value b is maximum`;
+            }
+            else {
+                return `The enter values are equal`
+            }
+        }
+        console.log(Maximum(9,8));
+        console.log(Maximum(7,9));
+        console.log(Maximum(9,9));
+        function tempratureConverter(C){
+            let F = (9/5)*C+32;
+            return ` Your converted value from Celcuis to Farenheit is: ${F}`;
+        }
+        console.log(tempratureConverter(37));
+    </script>
+</body>
+</html>
